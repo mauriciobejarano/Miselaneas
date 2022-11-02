@@ -4,8 +4,7 @@ vec = []
 cont1 = 0
 sum = 0 
 prom = 0
-moda = 0
-median = 0
+
 
 for i in range (10, 25):
     vec.insert(i,round(random.random()*100))
