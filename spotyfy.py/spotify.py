@@ -1,4 +1,4 @@
-spotify={'juan': {'1': ('2', '3'), '2': ('3', '4')}, 'pedro': {'1': ('23', '3')}}
+spotify={}
 canciones={}
 def añadirArtista (diccionario):
     while True:
