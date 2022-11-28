@@ -4,5 +4,8 @@ def respuesta(respuesta):
 
 if respuesta == "si":
         print("¿La independencia de colombia fue en 1810?")
+    
+        if respuesta == "si":
+                print("¿The Doors fue un grupo de rock Americano?")
 else:
-    print("fin")
+        "juego teeminado"
