@@ -5,6 +5,6 @@ try:
     for post in blog_posts:
      total_Megusta = total_Megusta + post['Megusta']
 except KeyError as e:
-    print('Error:', e)
+    print('El error:', e,'esta creando conflicto en el programa')
 
-print('fin de la operación')
+print('fin de la operación') 
