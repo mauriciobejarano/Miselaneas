@@ -1,5 +1,6 @@
 """En el siguiente ejemplo veremos el uso de las funciones pero esta vez para hacer calculos 
-matematicos con parametros reales o argumentos"""
+matematicos con parametros reales o argumentos los cuales para ser mostrados primero se tiene
+que llamar"""
 
 def calculo_dos_datos():
     numero_1 = eval(input('Introduce el primer numero: '))

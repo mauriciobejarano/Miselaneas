@@ -4,5 +4,5 @@ que queremos con lo que recibe es el retorno"""
 def saludar (nombre):
     return "buenos dias " + nombre
 
-x = saludar("jose")
+x = saludar("Camilo")
 print(x) 

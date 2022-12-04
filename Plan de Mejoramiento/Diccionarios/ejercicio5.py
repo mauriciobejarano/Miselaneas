@@ -1,3 +1,7 @@
+#En el siguiente ejemplo veremos el uso completo de los diccionarios en pthon
+#se puede observar tenemos el sistema para adjuntar datos dentro de un diccionario
+#y como imprimir los datos que ingresamos en ellos
+
 provincias = {}
 
 

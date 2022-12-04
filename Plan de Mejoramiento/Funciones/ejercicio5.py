@@ -1,5 +1,5 @@
 """En el siguiente ejmplo veremos los diferentes tipos de datos
-que pueden tener las funciones"""
+que pueden tener las funciones con funciones matematicas para hacer calculos"""
 def calculo_multiple(a, b):
     sum = a + b
     res = a - b
