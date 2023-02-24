@@ -12,4 +12,4 @@ def mcm(n, m):
         mayorque += 1
     return mayorque
 
-print(mcm(24,36))
+print(mcm(19,52))

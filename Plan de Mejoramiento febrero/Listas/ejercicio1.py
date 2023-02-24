@@ -3,4 +3,4 @@ edades = []
 for i in range(6):
     edades.append(int(input("Introduce una edad en numero: ")))
 edades.sort()
-print("Los números ganadores son " + str(edades))
+print("El orden de las edades es " + str(edades))

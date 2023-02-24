@@ -1,8 +1,16 @@
-"""otra forma para que una funcionnnos devuelva el resultado
-que queremos con lo que recibe es el retorno"""
+"""Función que calcula el máximo común divisor de dos números.
+Parámetros: - n: Es un número entero., - m: Es un número entero.
+Devuelve: El máximo común divisor de n y m.
+    """
 
-def saludar (nombre):
-    return "buenos dias " + nombre
+def mcd(n, m):
+  
+    rest = 0
+    while(m > 0):
+        rest = m
+        m = n % m
+        n = rest
+    return n
 
-x = saludar("Camilo")
-print(x) 
+
+print(mcd(30,72))

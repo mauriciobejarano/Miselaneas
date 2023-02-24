@@ -1,8 +1,8 @@
 #En los condicionales tenemos instrucciones la cuales definira
 #lo que sebe hacer por ejemplo como vemos en el ejercicio
 #el break dara pausa a la operacion segun la instruccio dada
-frase = input("Introduce una frase: ")
-letra = input("Introduce una letra")
+frase = input("Introduce una corta frase: ")
+letra = input("Introduce una letra que desees contar: ")
 contador = 0
 for i in frase:
     if i == letra:

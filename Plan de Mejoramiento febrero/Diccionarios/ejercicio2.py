@@ -2,6 +2,8 @@
 los caules seran almacenados y posteriormente introducidos en un diccionnario el cual
 al final mostara toda la informacion que el usuario ingreso, una excelente manera de ver
 como funcionan los formularios"""
+
+
 nombre = input('¿Cual es tu nombre? ')
 edad = input('¿Cuántos años tienes? ')
 direccion = input('¿Cuál es tu dirección actual? ')

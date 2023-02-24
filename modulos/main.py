@@ -1,3 +1,6 @@
+import sys
+from sys import path
+path.append('C:\\Users\\carlo\\OneDrive\\Documentos\\Carlos PYTHON\\modulos')
 import mate as m
 
 while True:
