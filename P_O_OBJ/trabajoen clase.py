@@ -1,4 +1,5 @@
 class empleado:
+    contador = 0
     def __init__(self,nombre,cargo,salario):
         self._nombre = nombre
         self._cargo = cargo
@@ -32,9 +33,21 @@ class empleado:
             salarioHE = (HE*6642)+salario
             return salarioHE
         else:
-            print('Aqui no se permite que trabajes mas de 10hrs')        
+            print('Aqui no se permite que trabajes mas de 10hrs')
+
+    def contador(self):
+        print("Empleados:")
+        for i in self._nombre:
+            print(i, self._nombre[i])
+
+    def ingresar(self, _cargo):
+        if _cargo in self._nombre:
+            self._nombre[_cargo]+=1
+        else:
+            self._nombre[_cargo]=1
+        self.contador()        
             
     
 emp1=empleado('mauricio','operador',160000)
 print(emp1.calSalarioIPC(160000))
-print(emp1.calSalarioHE(6,160000))
+print(emp1.calSalarioHE(5,160000))
