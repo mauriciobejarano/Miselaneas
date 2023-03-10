@@ -21,8 +21,18 @@ class Estudiante:
         self.telefono = telefono
         self.mpago = mpago
     
-    def getEstudiante(self):
-        return self.nombre, self.carrera, self.email, self.telefono, self.mpago       
+    def registrarEstudiante(self):
+        self.nombre = input("Ingresa tu nombre: ")
+        self.carrera = input("Ingresa tu carrera: ")
+        self.email = input("Ingresa tu e-mail: ")
+        self.telefono = input("Ingresa tu telefono: ")
+        self.mpago = input("Ingresa tu metodo de pago: ")   
+
+    def consultarEstudiante(self):
+        return self.nombre, self.carrera, self.email, self.telefono, self.mpago  
+
+    def eliminarEstudiante(self):
+        del self.nombre, self.carrera, self.email, self.telefono, self.mpago  
     
 class Instructor:
         def __init__(self,nombre, asignatura, disponibilidad):
@@ -75,11 +85,29 @@ class Transaccion:
         
     def getTransaccion(self):
         return self.detalle, self.fecha
+    
+def menu():
+    op = 0
+    
+    while op != 4:
+        print("- - - - BIENVENIDO - - - - -")
+        print("- - -¿Que desea hacer? - - -")
+        print("- 1 - Registrar estudiante -")
+        print("- 2 - Consultar estudiante -")
+        print("- 3 - Eliminar estudiante --")
+        print("- 4 - Salir ----------------")
+        op = input("Elige una opción: ")
+        if op == 1:
+            Estudiante.registrarEstudiante()
+        elif op == 2:
+            Estudiante.consultarEstudiante()
+        elif op == 3:
+            Estudiante.eliminarEstudiante()
+        elif op == 4:
+            print("- - -Gracias por utilizar nuestros servicios- - -")
+    else:
+        print("- -¡¡Por favor escribe una opcion valida!!- - ")
 
+menu()
 
-est=Estudiante('Andres','Arquitectura', 'andresg12@email.com', 3012568974, 'Debito')
-ins=Instructor('Fabian','Fisica', 'Disponible')
-print('Estudiante: ')                              
-print(est.getnombre())
-print('Nombre: ')                              
-print(est.getcarrera())                             
+e = Estudiante()
