@@ -109,5 +109,3 @@ def menu():
         print("- -¡¡Por favor escribe una opcion valida!!- - ")
 
 menu()
-
-e = Estudiante()
