@@ -12,4 +12,18 @@ for fila in micursor.fetchall():                              #Se usara un for p
     print(fila[2])                                            # imprimira todos ls valores que haya en la fila 2
     print(fila[3])                                            # imprimira todos ls valores que haya en la fila 4
     print('-'*50)                                             # de todos los valores que tenemos no  devolvera solo50.
+
+
+def modificar(conexion, tabla, campo, dato, id):
+    micursor = conexion.cursor()
+    sentencia = f"UPDATE {tabla} SET {campo} = '{dato}' WHERE {id} = '{id}'"
+    micursor.execute(sentencia)
+    con.commit()
+    print('Modificación exitosa !!!')
     
+def eliminar(conexion, tabla, campo, dato):
+    micursor = conexion.cursor()
+    sentencia = f"DELETE FROM {tabla} WHERE {campo} = '{dato}'"
+    micursor.execute(sentencia)
+    con.commit()
+    print('Eliminación exitosa !!!')
